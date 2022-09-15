@@ -1,4 +1,10 @@
 main {
-  background-color: burlywood;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  align-items: center;
   height: 90vh;
+  background-size: contain;
+  background-position: center;
+  
 }
