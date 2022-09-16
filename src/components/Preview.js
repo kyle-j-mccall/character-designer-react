@@ -3,22 +3,25 @@ import './Preview.css';
 import './Preview.css';
 
 
-export default function Preview({ head, chest, legs, oath }) {
+export default function Preview({ head, chest, legs, oathArr, hideImg }) {
+  console.log(hideImg);
   return (
     <div>
       <div className='preview-container'>
         <div className='oath-container'>
-          <p className='oath'>{oath}</p>
+          <h3>Sworn Oaths</h3>
+          <ul className='oath'>{oathArr.map((oath) => (<li key={oath}>{oath}</li>))}</ul>
         </div>
         <div className='character-container'>
           <div className='head-container'>
-            <img className='head-img' src={`${process.env.PUBLIC_URL}/armor/${head}.png`}/>
+            <img className={hideImg.one ? 'hidden' : 'head-img'} src={`${process.env.PUBLIC_URL}/armor/${head}.png`}/>
+            
           </div>
           <div className='chest-container'>
-            <img className='chest-img' src={`${process.env.PUBLIC_URL}/armor/${chest}.png`}/>
+            <img className={hideImg.two ? 'hidden' : 'chest-img'} src={`${process.env.PUBLIC_URL}/armor/${chest}.png`}/>
           </div>
           <div className='leg-container'>
-            <img className='leg-img' src={`${process.env.PUBLIC_URL}/armor/${legs}.png`}/>
+            <img className={hideImg.three ? 'hidden' : 'leg-img'} src={`${process.env.PUBLIC_URL}/armor/${legs}.png`}/>
           </div>
         </div>
         

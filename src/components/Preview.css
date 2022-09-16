@@ -16,11 +16,26 @@
   
 }
 
+.oath-container h3 {
+  font-family: 'Allura', cursive;
+  color: goldenrod;
+  font-size: 2.5vh;
+}
+
 .oath {
   font-size: 2.1vh;
   font-family: 'Allura', cursive;
   color: goldenrod;
+  list-style: none;
+  text-align: center;
 }
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+
 
 .head-img {
   height: 7.5vh;
@@ -35,4 +50,8 @@
 .leg-img {
   height: 16vh;
   max-height: 95%;
+}
+
+.hidden {
+  display: none;
 }
