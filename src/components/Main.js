@@ -13,11 +13,16 @@ export default function Main() {
   const [chest, setChest] = useState('');
   const [legs, setLegs] = useState('');
   const [oath, setOath] = useState('');
+  const [oathArr, setOathArr] = useState([]);
+
+  const addOath = () => {
+    [oathArr, ...setOathArr];
+  };
 
   return (
     <main style={{ backgroundImage: `url(${background})` }}>
-      <Editor head={head} setHead={setHead} chest={chest} setChest={setChest} legs={legs} setLegs={setLegs} />
-      <Preview head={head} chest={chest} legs={legs}/>
+      <Editor head={head} setHead={setHead} chest={chest} setChest={setChest} legs={legs} setLegs={setLegs} oath={oath} setOath={setOath} />
+      <Preview head={head} chest={chest} legs={legs} oath={oath} />
     </main>
   );
 }

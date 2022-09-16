@@ -1,7 +1,7 @@
 import React from 'react';
 import './Editor.css';
 
-export default function Editor({ head, setHead, chest, setChest, legs, setLegs }) {
+export default function Editor({ head, setHead, chest, setChest, legs, setLegs, oath, setOath }) {
   return (
     <div>
       <div className='inputs'>
@@ -27,7 +27,7 @@ export default function Editor({ head, setHead, chest, setChest, legs, setLegs }
           <option>Malikeths Greaves</option>
         </select>
         <label>Make an Oath</label>
-        <textarea type='text' name='Oath'/>
+        <textarea type='text' name='Oath' value={oath} onChange={(e) => setOath(e.target.value)}/>
         <p className='record'>You have changed your helm 0 times, your chest armor 0 times and your greaves 0 times</p>
       </div>
       
