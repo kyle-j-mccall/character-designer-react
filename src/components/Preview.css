@@ -6,19 +6,26 @@
   padding-bottom: 50px;
   margin-left: 20px;
   margin-right: 20px;
-  background-image: url('../../assets/marble1.jpg');
+  background-image: url('../../assets/redwood.jpg');
   border: 3px solid goldenrod;
   border-radius: 8px;
+  width: 18vw;
+  height: 50vh;
+  min-height: 50vh;
+  
 }
 
 .head-img {
   height: 110px;
+  max-height: 95%;
 }
 
 .chest-img {
   height: 200px;
+  max-height: 95%;
 }
 
 .leg-img {
   height: 200px;
+  max-height: 95%;
 }

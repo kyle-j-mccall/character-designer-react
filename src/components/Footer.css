@@ -2,6 +2,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: aquamarine;
   height: 5vh;
+  font-family: 'Allura', cursive;
+  font-weight: bold;
+  font-size: 3vh;
+  background-position: center;
 }

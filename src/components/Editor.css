@@ -1,10 +1,18 @@
 .inputs {
   display: flex;
   flex-direction: column;
-  background-color: white;
-  font-size: 30px;
+  background-image: url('../../assets/redwood.jpg');
+  color: goldenrod;
+  font-size: 2.8vh;
   margin: 50px;
-  padding: 50px;
+  padding: 30px;
+  border: 3px solid goldenrod;
+  border-radius: 8px;
+  width: 18vw;
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Allura', cursive;
 }
 
 select {
@@ -22,5 +30,5 @@ textarea {
 }
 
 .record {
-  font-size: 18px;
+  font-size: 2.1vh;
 }
