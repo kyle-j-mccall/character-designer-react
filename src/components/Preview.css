@@ -1,0 +1,57 @@
+.preview-container {
+  display: flex;
+  flex-direction: column;
+
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-image: url('../../assets/redwood.jpg');
+  border: 3px solid goldenrod;
+  border-radius: 8px;
+  width: 18vw;
+  height: 62vh;
+  min-height: 50vh;
+  
+}
+
+.oath-container h3 {
+  font-family: 'Allura', cursive;
+  color: goldenrod;
+  font-size: 2.5vh;
+}
+
+.oath {
+  font-size: 2.1vh;
+  font-family: 'Allura', cursive;
+  color: goldenrod;
+  list-style: none;
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.head-img {
+  height: 7.5vh;
+  max-height: 95%;
+}
+
+.chest-img {
+  height: 16vh;
+  max-height: 95%;
+}
+
+.leg-img {
+  height: 16vh;
+  max-height: 95%;
+}
+
+.hidden {
+  display: none;
+}
