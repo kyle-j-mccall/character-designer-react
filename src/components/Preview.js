@@ -4,7 +4,7 @@ import './Preview.css';
 
 
 export default function Preview({ head, chest, legs, oathArr, hideImg }) {
-  console.log(hideImg);
+  
   return (
     <div>
       <div className='preview-container'>

@@ -15,7 +15,7 @@ export default function Editor({ head, setHead, chest, setChest, legs, setLegs, 
         ); 
         setHideImg((prevState) => {
           return { ...prevState, one: false };}); }}>
-          <option>Choose your warriors helm</option>
+          <option >Choose your warriors helm</option>
           <option>Briar Helm</option>
           <option>Elden Lord Crown</option>
           <option>Scaled Helm</option>
@@ -27,7 +27,7 @@ export default function Editor({ head, setHead, chest, setChest, legs, setLegs, 
         setHideImg((prevState) => {
           return { ...prevState, two: false }; 
         }); }}>
-          <option>Choose your warriors chest armor</option>
+          <option value={chest}>Choose your warriors chest armor</option>
           <option>All Knowing</option>
           <option>Elden Lord Chest Plate</option>
           <option>Malikeths Chest Plate</option>
@@ -39,7 +39,7 @@ export default function Editor({ head, setHead, chest, setChest, legs, setLegs, 
         setHideImg((prevState) => {
           return { ...prevState, three: false }; 
         }); }}>
-          <option>Choose your warriors greaves</option>
+          <option value={legs}>Choose your warriors greaves</option>
           <option>Malenias Greaves</option>
           <option>Elden Lord Greaves</option>
           <option>Malikeths Greaves</option>

@@ -19,7 +19,7 @@ export default function Main() {
   const [chestCount, setChestCount] = useState(0);
   const [legCount, setLegCount] = useState(0);
 
-  console.log(headCount);
+  
 
 
 
